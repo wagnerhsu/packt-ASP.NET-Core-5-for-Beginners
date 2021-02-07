@@ -21,7 +21,7 @@ namespace Chapter_04_LearningRazorSyntax.Models
     {
         public List<BeerModel> GetAllBeer()
         {
-            return new List<BeerModel>
+            return new()
             {
                 new BeerModel { Id =1, Name="Redhorse", Type="Lager" },
                 new BeerModel { Id =2, Name="Furious", Type="IPA" },

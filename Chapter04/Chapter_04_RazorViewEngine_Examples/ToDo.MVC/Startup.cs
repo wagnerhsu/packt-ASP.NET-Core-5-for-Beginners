@@ -21,7 +21,7 @@ namespace ToDo.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<TodoDbContext>(options => options.UseInMemoryDatabase("Todos"));
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
