@@ -22,7 +22,10 @@ namespace BlazorServer.Web
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json", false, false)
+                        .Build();
+                    webBuilder.UseStartup<Startup>()
+                        .UseUrls(configuration["HostUrls"]);
                 });
     }
 }
