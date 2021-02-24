@@ -1,0 +1,1 @@
+- Merge from Github[>>](https://github.com/wagnerhsu/packt-ASP.NET-Core-5-for-Beginners/compare/master...PacktPublishing:master)
